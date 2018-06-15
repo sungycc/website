@@ -5,6 +5,7 @@ COPY . /app/
 EXPOSE 80
 RUN  npm install \
     && npm run build \
+    && mkdir /var/www/html \
     && cp -r dist/* /var/www/html \
     && rm -rf /app
 CMD ["nginx","-g","daemon off;"]
