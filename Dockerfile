@@ -3,7 +3,7 @@ RUN apt-get -y update && apt-get install -y
 WORKDIR /app
 COPY . /app/
 EXPOSE 80
-RUN  npm install \
+RUN npm --registry https://registry.npm.taobao.org install \
     && npm run build \
     && mkdir /var/www/html \
     && cp -r dist/* /var/www/html \
