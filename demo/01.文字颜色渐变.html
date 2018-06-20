@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>01.文字颜色渐变</title>
+  <style type="text/css">
+    .way01 {
+      position: relative;
+      color: #D3DE67;
+    }
+
+    .way01:before {
+      content: attr(text);
+      position: absolute;
+      z-index: 10;
+      color: #70F484;
+      -webkit-mask: linear-gradient(to left, #70F484, transparent);
+    }
+
+    .way02 span {
+      background: linear-gradient(to right, #70F484, #D3DE67);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="way01" text="web前端那些事儿 - 01">web前端那些事儿 - 01</h1>
+  <h1 class="way02">
+    <span>web前端那些事儿 - 02</span>
+  </h1>
+</body>
+
+</html>
