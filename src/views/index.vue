@@ -20,8 +20,7 @@
 export default {
   name: 'particlesJs',
   data () {
-    return {
-    }
+    return {}
   },
   mounted () {
     this.setParticles()
@@ -29,115 +28,115 @@ export default {
   methods: {
     setParticles () {
       let particlesJson = {
-        'particles': {
-          'number': {
-            'value': 66,
-            'density': {
-              'enable': true,
-              'value_area': 999
+        particles: {
+          number: {
+            value: 66,
+            density: {
+              enable: true,
+              value_area: 999
             }
           },
-          'color': {
-            'value': '#87CEFA'
+          color: {
+            value: '#87CEFA'
           },
-          'shape': {
-            'type': 'polygon',
-            'stroke': {
-              'width': 0,
-              'color': '#000000'
+          shape: {
+            type: 'polygon',
+            stroke: {
+              width: 0,
+              color: '#000000'
             },
-            'polygon': {
-              'nb_sides': 5
+            polygon: {
+              nb_sides: 5
             },
-            'image': {
-              'src': 'img/github.svg',
-              'width': 100,
-              'height': 100
+            image: {
+              src: 'img/github.svg',
+              width: 100,
+              height: 100
             }
           },
-          'opacity': {
-            'value': 0.5,
-            'random': false,
-            'anim': {
-              'enable': false,
-              'speed': 1,
-              'opacity_min': 0.1,
-              'sync': false
+          opacity: {
+            value: 0.5,
+            random: false,
+            anim: {
+              enable: false,
+              speed: 1,
+              opacity_min: 0.1,
+              sync: false
             }
           },
-          'size': {
-            'value': 3,
-            'random': true,
-            'anim': {
-              'enable': false,
-              'speed': 40,
-              'size_min': 0.1,
-              'sync': false
+          size: {
+            value: 3,
+            random: true,
+            anim: {
+              enable: false,
+              speed: 40,
+              size_min: 0.1,
+              sync: false
             }
           },
-          'line_linked': {
-            'enable': true,
-            'distance': 150,
-            'color': '#87CEFA',
-            'opacity': 0.4,
-            'width': 1
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: '#87CEFA',
+            opacity: 0.4,
+            width: 1
           },
-          'move': {
-            'enable': true,
-            'speed': 2,
-            'direction': 'none',
-            'random': false,
-            'straight': false,
-            'out_mode': 'out',
-            'bounce': false,
-            'attract': {
-              'enable': false,
-              'rotateX': 600,
-              'rotateY': 1200
+          move: {
+            enable: true,
+            speed: 2,
+            direction: 'none',
+            random: false,
+            straight: false,
+            out_mode: 'out',
+            bounce: false,
+            attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200
             }
           }
         },
-        'interactivity': {
-          'detect_on': 'canvas',
-          'events': {
-            'onhover': {
-              'enable': true,
-              'mode': 'repulse'
+        interactivity: {
+          detect_on: 'canvas',
+          events: {
+            onhover: {
+              enable: true,
+              mode: 'repulse'
               // 'mode': 'grab'
             },
-            'onclick': {
-              'enable': true,
-              'mode': 'push'
+            onclick: {
+              enable: true,
+              mode: 'push'
             },
-            'resize': true
+            resize: true
           },
-          'modes': {
-            'grab': {
-              'distance': 400,
-              'line_linked': {
-                'opacity': 1
+          modes: {
+            grab: {
+              distance: 400,
+              line_linked: {
+                opacity: 1
               }
             },
-            'bubble': {
-              'distance': 400,
-              'size': 40,
-              'duration': 2,
-              'opacity': 8,
-              'speed': 3
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3
             },
-            'repulse': {
-              'distance': 200,
-              'duration': 0.4
+            repulse: {
+              distance: 200,
+              duration: 0.4
             },
-            'push': {
-              'particles_nb': 4
+            push: {
+              particles_nb: 4
             },
-            'remove': {
-              'particles_nb': 2
+            remove: {
+              particles_nb: 2
             }
           }
         },
-        'retina_detect': false
+        retina_detect: false
       }
       // let particlesJson = {
       //   'particles': {
@@ -269,12 +268,13 @@ export default {
   transform: translate(-50%, -50%);
   .title {
     position: relative;
+    margin: 12px 0;
     color: #70f484;
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 6px;
     // text-transform: uppercase;
-    margin: 12px 0;
+    white-space: nowrap;
   }
   .title:before {
     content: attr(text);
@@ -284,11 +284,11 @@ export default {
     -webkit-mask: linear-gradient(to left, #d3de67, transparent);
   }
   h2 {
+    margin-bottom: 30px;
     color: #999;
     font-weight: normal;
     font-size: 16px;
     letter-spacing: 0.12em;
-    margin-bottom: 30px;
     // left: 3px;
     text-align: center;
   }
